@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Room</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="styles/lobby.css">
+</head>
+<body>
+	<header id="nav">
+		<div class="nav--list">
+			<a href="lobby.html">
+				<h3 id="logo">
+					<img src="./images/logo.png" alt="Site Logo">
+					<span>Live Chatting</span>
+				</h3>
+			</a>
+		</div>
+
+		<div id="nav__links">
+			<button id="chat__button"><svg width="24" height="24" xlmns="http://www.w3.org/2000/svg"></svg></button>
+			<a class="nav__link" href="lobby.html">
+				Lobby
+				<svg xlmns="https://www.w3.org/TR/SVG2/" width="24" height="24" fill="#ede0e0"><</svg>
+			</a>
+			<a class="nav__link" id="create__room__btn" href="create.html">
+				Create Room
+				<svg xlmns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ede0e0"></svg>
+			</a>
+		</div>
+	</header>
+
+	<section class="hero__section">
+		<h2>Interactive Chat</h2>			
+		<div class="hero__section__img">
+			<img src="./images/hero.svg">
+		</div>
+	</section>
+
+	<main>
+		<section id="room__list">
+			<h3 id="room__listTitle">Live Now</h3>
+			<div id="room__container"></div>
+		</section>
+	</main>
+
+</body>
+<script src="js/agora-rtm-sdk-1.5.1.js"></script>
+<script type="module" src="js/lobby.js"></script>
+</html>
